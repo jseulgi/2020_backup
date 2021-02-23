@@ -1,9 +1,0 @@
-std_msgs/Header header
-float64 vehicle_speed
-float64 vehicle_yaw_rate
-float64 global_yaw_ref_map
-geometry_msgs/Point ego_link_point
-int64 ego_link_type
-sensor_msgs/PointCloud2 local_link_points
-obj_msgs/ObjTrackBox[] bounding_boxes
-obj_msgs/ObjTrackBox[] raw_bounding_boxes

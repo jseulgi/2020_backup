@@ -1,4 +1,0 @@
-- git:
-    uri: https://github.com/jsk-ros-pkg/jsk_recognition.git
-    local-name: jsk-ros-pkg/jsk_recognition
-    version: 0.3.29

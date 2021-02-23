@@ -1,4 +1,0 @@
-<launch>
-	<node pkg="v2x_ros" type="v2x_client_v7" name="v2x_client_v7" output="screen" respawn="true" respawn_delay="100" ></node>
-	<rosparam command="load" file="$(find v2x_ros)/config/yaml_mission_list.yaml" />
-</launch>

@@ -1,8 +1,0 @@
-<launch>
-	<node pkg="v2x_ros" type="client_v03" name="client_v03" output="screen">
-		<param name="obu_ip" value="192.168.10.10" />
-		<param name="obu_port" value="15130" />
-		<param name="buffer_size" value="3000" />
-		<param name="sleep_rate" value="1000000" />
-	</node>
-</launch>

@@ -1,2 +1,0 @@
-nav_msgs/Odometry mclPose
-sensor_msgs/PointCloud2 lidar

@@ -1,5 +1,0 @@
-<launch>
-	<node pkg="v2x_ros" type="mission_v11" name="mission_v11" output="screen" respawn="true" respawn_delay="5"></node>
-	<rosparam param="/mission_list">[27, 21, 13, 24, 35, 46, 37, 28, 49, 10, 13, 16, 25, 29, 36, 16, 17, 18, 19, 20]</rosparam>
-</launch>
-

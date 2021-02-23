@@ -1,3 +1,0 @@
-float32 Steer_Cmd
-float32 Accel_Dec_Cmd
-float32 Aeb_Dec_Cmd

@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: v2x_ros
-Description: Description of v2x_ros
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

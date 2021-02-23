@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/urlautocar/eg_ws/src/autonomous-car/v2x/0_v2x_ros/build/gtest/googlemock/gtest/src -Wl,-rpath,/home/urlautocar/eg_ws/src/autonomous-car/v2x/0_v2x_ros/build/gtest/googlemock/gtest/src -lpthread 

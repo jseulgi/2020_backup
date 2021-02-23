@@ -1,5 +1,0 @@
-<launch>
-	<!-- <node pkg="v2x_ros" type="traffic_v05" name="traffic_v05" output="screen" respawn="true" respawn_delay="5"></node> -->
-	<node pkg="v2x_ros" type="traffic_v05" name="traffic_v05" respawn="true" respawn_delay="5"></node>
-
-</launch>
