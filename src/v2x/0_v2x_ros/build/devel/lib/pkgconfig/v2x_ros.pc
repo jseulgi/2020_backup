@@ -1,0 +1,8 @@
+prefix=/home/urlautocar/eg_ws/src/autonomous-car/v2x/0_v2x_ros/build/devel
+
+Name: v2x_ros
+Description: Description of v2x_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

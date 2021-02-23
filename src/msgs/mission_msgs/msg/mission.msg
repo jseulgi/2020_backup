@@ -1,0 +1,10 @@
+int32 mission_id
+bool mission_state
+int32 score
+int32 dist
+bool left_turn_mission 
+bool tunnel_mission
+bool no_HD_map_mission
+bool obstacle_mission
+geometry_msgs/PoseStamped start_pos
+geometry_msgs/PoseStamped end_pos

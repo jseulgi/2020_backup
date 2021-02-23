@@ -1,0 +1,15 @@
+string id
+string from_node
+string to_node
+int8 road_type
+float32 length
+int32 speed
+string[] R_laneID
+string[] L_laneID
+string[] LLID
+string[] RLID
+string[] NLIDS
+geometry_msgs/Point[] geometry
+float32 a
+float32 b
+float32 c

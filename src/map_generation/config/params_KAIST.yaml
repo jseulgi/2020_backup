@@ -1,0 +1,94 @@
+shp:
+
+    # KAIST
+    # lane: "/HD_MAP/HD_Map_KAIST_V2/2_LANE_SIDE_KAIST_V2/2_LANE_SIDE_KAIST_V2.shp"
+    # link: "/HD_MAP/HD_Map_KAIST_V2/1_LANE_LINK_KAIST_V2/1_LANE_LINK_KAIST_V3.shp"
+    # node: "/HD_MAP/HD_Map_KAIST_V2/6_NODES_KAIST_V2/6_NODES_KAIST_V2.shp"
+
+    # # ALPHA ( 대구 수성의료지구 )
+    # lane: "/HD_MAP/HD_Map_alpha/A1_LANE/A1_LANE_densified.shp"
+    # link: "/HD_MAP/HD_Map_alpha/A3_LINK/A3_LINK_Modified_euigon_V2.shp"
+    # node: "/HD_MAP/HD_Map_alpha/C1_NODE/C1_NODE.shp"
+
+    # KAIST
+    lane: "/HD_MAP/HD_Map_KAIST_LINK_LANE/2_LANE_SIDE_KAIST_V2/2_LANE_SIDE_KAIST_V2_densified.shp"
+    link: "/HD_MAP/HD_Map_KAIST_LINK_LANE/1_LANE_LINK_KAIST_V2/1_LANE_LINK_KAIST_V3_densified.shp"
+    node: "/HD_MAP/HD_Map_KAIST_LINK_LANE/6_NODES_KAIST_V2/6_NODES_KAIST_V2.shp"
+layer:
+    # KAIST
+    lane: 2_LANE_SIDE_KAIST_V2_densified
+    link: 1_LANE_LINK_KAIST_V3_densified
+    node: 6_NODES_KAIST_V2
+
+    # # ALPHA ( 대구 수성의료지구 )
+    # lane: A1_LANE_densified
+    # link: A3_LINK_Modified_euigon_V2
+    # node: C1_NODE
+
+# path:
+#     start: 155M00500204
+#     goal: 155M02240104
+
+# # 대구
+# lane:
+#     id: 9
+#     right_link: 0
+#     left_link: 1
+#     lanetype: 2
+#     lanecode: 3
+#     barrier: 4
+#     laneno: 5
+#     code: 6
+
+# KAIST
+lane:
+    id: 0
+    right_link: 3
+    left_link: 4
+    lanetype: 7
+    lanecode: 5
+
+# # 대구
+# link:
+#     id: 0
+#     from_node: 1
+#     to_node: 2
+#     length: 3
+#     speed: 6
+#     left_link: 14
+#     right_link: 15
+#     next_link: 16
+
+# KAIST
+link:
+    id: 0
+    from_node: 1
+    to_node: 2
+    length: 3
+    road_type: 4
+    speed: 6
+    left_link: 16
+    right_link: 17
+    next_link: 18
+
+# # 대구
+# node:
+#     id: 0
+#     next_link: 6
+#     prev_link: 7
+
+# KAIST
+node:
+    id: 0
+    next_link: 8
+    prev_link: 9
+
+rviz_on:
+    is_link_on: true
+    is_node_on: true
+    is_lane_on: true
+    is_path_on: true
+
+lane_change:
+    weight: 2
+    length_lane_changed: 35

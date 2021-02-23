@@ -1,0 +1,9 @@
+int16 id
+string Class
+float64 xmin
+float64 ymin
+float64 xmax
+float64 ymax
+float64 xdelta
+float64 ydelta
+float64 probability

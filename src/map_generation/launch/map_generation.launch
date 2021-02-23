@@ -1,0 +1,8 @@
+<launch>
+
+    <node pkg="map_generation" type="map_generation" name="map_generation" output="screen"/>
+    <rosparam command="load" file="$(find map_generation)/config/params_Daegu.yaml" />
+    <param name="/abspath" value="$(find map_generation)" />
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find map_generation)/rviz/load_map.rviz"/>
+
+</launch>

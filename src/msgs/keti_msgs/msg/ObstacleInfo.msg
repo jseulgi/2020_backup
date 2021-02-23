@@ -1,0 +1,7 @@
+float32 distance_front_car
+float32 velocity_of_front_car
+bool exist_ob_on_lane
+bool can_left_lane_change
+bool can_right_lane_change
+
+

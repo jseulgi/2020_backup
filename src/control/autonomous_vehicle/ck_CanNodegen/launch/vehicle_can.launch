@@ -1,0 +1,6 @@
+<launch>
+
+	<node pkg="autonomous_vehicle" type="CanNodegen" name="CanNodegen" />
+	<node pkg="pcan" type="pcan_pub_write" name="pcan_pub_write" />
+
+</launch>

@@ -1,0 +1,14 @@
+std_msgs/Header header
+int32 index
+int16 id
+float32 min_x
+float32 max_x
+float32 min_y
+float32 max_y
+float32 delta_x
+float32 delta_y
+float64 probability
+string Class
+planar planar
+
+

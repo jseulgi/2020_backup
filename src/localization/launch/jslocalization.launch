@@ -1,0 +1,40 @@
+<launch>
+    <param name="/use_sim_time" value="true"/>
+
+    <rosparam command="load" file="$(find jslocalization)/config/jslocalization.yaml"/>
+    
+    <!--node name="rviz1" pkg="rviz" type="rviz" args="-d $(find jslocalization)/rviz/tracking.rviz"/-->
+    <!--node name="rviz1" pkg="rviz" type="rviz" args="-d $(find jslocalization)/rviz/jslocalization.rviz"/-->
+    <!--node name="rviz2" pkg="rviz" type="rviz" args="-d $(find jslocalization)/rviz/pole_local.rviz"/-->
+    <!--node name="rviz3" pkg="rviz" type="rviz" args="-d $(find jslocalization)/rviz/planar_local.rviz"/-->
+
+    <node name="nodegen" pkg="jslocalization" type="nodegen">
+        # SUBSCRIBE
+        <remap from="/nodegen/lidar" to="/os1_cloud_node/points" />
+        <remap from="/nodegen/gps"  to="/inspva" />
+        # PUBLISH
+        <remap from="/jslocalization/nodegen/node" to="/nodegen/result"/>  # is subscribed by nodemanager
+    </node>
+
+
+    <node name="extractfeature" pkg="jslocalization" type="extractfeature" output="screen">
+        # SUBSCRIBE
+        <remap from="/jslocalization/feature/nodeIn" to="/nodegen/result" />
+    
+        # PUBLISH
+        
+    </node>
+
+    <!--node name="featuretracker" pkg="jslocalization" type="featuretracker" output="screen"/--> # for c++
+
+    <!--node name="planar_tracking" pkg="jslocalization" type="PlanarTracking.py"/-->
+    <!--node name="pole_tracking" pkg="jslocalization" type="PoleTracking.py"/-->
+
+    <node name="mcl" pkg="jslocalization" type="mcl" output="screen"/>
+
+</launch>
+
+
+    <!--- TF -->
+    <!--node pkg="tf" type="static_transform_publisher" name="odom_to_map"  args="0 0 0 0 0 -1 0 /map /odom 10" /-->
+    <!--node pkg="tf" type="static_transform_publisher" name="lidar_to_odom"  args="0 0 0 0 0 1 0 /odom /lidar 10" /-->

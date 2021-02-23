@@ -1,0 +1,60 @@
+GRIDROI:
+    link_type: 7
+    local_map_radius: 60.0
+    map_resolution_m: 0.2
+    dilate_mask_pixel_size: 15
+    erode_mask_pixel_size: 5
+    lane_dilate_mask_pixel_size: 6
+    lane_erode_mask_pixel_size: 3
+
+Sensor:
+    model: OS2
+    distance_interval: 10
+
+ROI:
+    use_GridROI: true
+    pc_top: -0.1
+    pc_bottom: -2.5
+    pc_left:   60.0
+    pc_right: -60.0
+    pc_front: 60.0
+    pc_back: -60.0
+
+CloudPrefilter:
+    voxel_size: 0.1
+    voxel_minimum_size: 1
+    intensity_thread: 200.0
+
+Ground:
+    num_seg:  1
+    num_iter: 3
+    num_lpr:  20
+    seed_Hthd:  1.2
+    plane_Dthd: 0.5
+
+Clustering:
+    clustering_min_size: 5
+    clustering_max_size: 10000
+    #euclidean_initial_tolerance: 0.15
+    euclidean_initial_tolerance: 2.0
+
+SizeFilter:
+    use_size_filter: false
+    X_maximum_scale: 10.0
+    X_minimum_scale: 0.5
+    Y_maximum_scale: 10.0
+    Y_minimum_scale: 0.5
+    Z_minimum_scale: 0.10
+    use_intensity_filter: false
+    high_intensity_ratio_thread: 0.1
+    use_iou_combine: true
+
+#ObjClassifier
+Ego:
+    width: 1.0
+    length: 1.0
+    distance_to_egotail: 5.0
+    static_speed_threshold: 1.5
+    use_velocity_fitting: false
+    velocity_fitting_high_thd: 45
+    velocity_fitting_low_thd: 10

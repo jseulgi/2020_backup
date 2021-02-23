@@ -1,0 +1,6 @@
+<launch>
+
+    <node pkg="global_planning" type="global_planning" name="global_planning" output="screen"/>
+    <rosparam command="load" file="$(find global_planning)/config/params.yaml" />
+
+</launch>

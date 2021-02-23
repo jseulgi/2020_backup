@@ -1,0 +1,7 @@
+- name: 'Steering Wheel Enable'
+  service: 'steering_wheel_enable'
+  column: 0
+- name: 'ACC Enable'
+  service: 'acc_enable'
+  column: 0
+

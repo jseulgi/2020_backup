@@ -1,0 +1,8 @@
+time stamp
+int16 roi_value
+float64 map_resolution
+float64 global_yaw_ref_map
+geometry_msgs/Point ego_link_point
+int64 ego_link_type
+sensor_msgs/Image grid_roi
+sensor_msgs/PointCloud2 local_link_points

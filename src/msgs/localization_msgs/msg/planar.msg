@@ -1,0 +1,9 @@
+std_msgs/Header header
+int32 index
+geometry_msgs/Point start
+geometry_msgs/Point end
+geometry_msgs/Point centroid
+float32 length
+float32 slope
+float32 theta
+sensor_msgs/PointCloud2 pc_planar

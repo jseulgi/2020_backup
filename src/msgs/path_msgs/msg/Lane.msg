@@ -1,0 +1,9 @@
+string id
+string R_LINKID
+string L_LINKID
+int32 lane_type
+int32 lane_code
+int32 barrier
+int32 lane_no
+int32 code
+geometry_msgs/Point[] geometry

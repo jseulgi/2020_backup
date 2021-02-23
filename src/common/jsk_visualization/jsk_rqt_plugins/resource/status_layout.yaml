@@ -1,0 +1,20 @@
+- name: 'Steering Wheel Enable'
+  topic: 'Steering_Wheel_Enable'
+  column: 0
+  row: 1
+- name: 'Steering Override Ignore'
+  topic: 'Steering_Wheel_Enable'
+  column: 1
+  row: 1
+- name: 'ACC Enable'
+  topic: 'ACC_Enable'
+  column: 2
+  row: 1
+- name: 'All Auto Enable'
+  topic: 'all_auto_enable'
+  column: 3
+  row: 1
+- name: 'Emergency Stop'
+  topic: 'Emergency_Stop'
+  column: 4
+  row: 1

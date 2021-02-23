@@ -1,0 +1,5 @@
+<launch>
+    
+    <node pkg="receive_gps" type="receive_gps" name="receive_gps" output="screen"/>
+
+</launch>

@@ -1,0 +1,19 @@
+<launch>
+
+	<node pkg="v2x_ros" type="v2x_client_node" name="v2x_client_node" output="screen" respawn="true" respawn_delay="1" >
+		<param name="csv_file_path" value="$(find v2x_ros)/mission_list.csv" />
+		<param name="obu_ip" value="172.20.0.1" />
+		<param name="obu_port" value="17001" />
+		<param name="buffer_size" value="1500" />
+		<param name="sleep_rate" value="100" /> 
+		<param name="v2x_env" value="OFFLINE" /> 
+		<!-- <param name="v2x_env" value="ONLINE" />  -->
+		<param name="rosbag_env" value="true" /> 
+		<!-- <param name="rosbag_env" value="false" />  -->
+
+		<!-- <param name="distance_threshold" value="1.0" />
+		<param name="time_threshold" value="5.0" />
+		<param name="call_data_size" value="39" /> -->
+	</node>
+
+</launch>
